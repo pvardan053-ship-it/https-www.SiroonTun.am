@@ -1,119 +1,46 @@
 <!DOCTYPE html>
 <html lang="hy">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Siroon Tun</title>
-
-<meta name="description" content="Siroon Tun հանգստյան գոտի Ձորաղբյուրում։ Լողավազան, սաունա, տաղավարներ և փակ սրահ։ Ամրագրում՝ 098400070"> 
-<link rel="icon" type="image/png" href="logo.png">
-
-<!-- Ստիլերը առանձին CSS ֆայլից -->
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siroon Tun</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="container nav">
-    <div class="logo">
-      <img src="logo.png" alt="Siroon Tun Logo">
-    </div>
-    <nav>
-      <a href="#services">Ծառայություններ</a>
-      <a href="#gallery">Նկարներ</a>
-      <a href="#booking">Ամրագրում</a>
-      <a href="#contact">Կապ</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="hero-content">
+<div class="container">
     <h1>Siroon Tun</h1>
-    <p>Քո լավագույն հանգիստը Ձորաղբյուրում</p>
-    <a href="#booking" class="btn-main">Ամրագրել հիմա</a>
-  </div>
-</section>
+    <p class="subtitle">Ամրագրում</p>
 
-<section id="services" class="section">
-  <h2>Մեր ծառայությունները</h2>
-  <div class="cards">
-    <div class="card">🏊 Լողավազան</div>
-    <div class="card">🏡 Տաղավար</div>
-    <div class="card">🔥 Մանղալ</div>
-    <div class="card">🧖 Շոքեբաղնիք</div>
-    <div class="card">🏢 Առանձնատուն</div>
-  </div>
-</section>
+    <img src="nkar5.png" alt="Շոքեբաղնիք" class="sauna-img">
 
-<section id="gallery" class="section dark">
-  <h2>Մեր տարածքը</h2>
-  <div class="gallery">
-    <img src="nkar1.png" alt="Տարածք 1">
-    <img src="nkar2.png" alt="Տարածք 2">
-    <img src="nkar3.png" alt="Տարածք 3">
-    <img src="nkar4.png" alt="Տարածք 4">
-    <img src="nkar5.png" alt="Շոքեբաղնիք">
-  </div>
-</section>
+    <form id="bookingForm">
 
-<section id="booking" class="section">
-  <h2>Օնլայն ամրագրում</h2>
-  <form id="bookingForm" class="form">
-    <input type="text" id="name" placeholder="Անուն" required>
-    <input type="tel" id="phone" placeholder="Հեռախոսահամար" required>
-    <input type="number" id="people" placeholder="Մարդկանց քանակ" required>
+        <input type="text" id="name" placeholder="Ձեր անունը" required>
 
-    <div class="input-group">
-      <label for="overnightNights">Քանի գիշեր է գիշերակացը:</label>
-      <input type="number" id="overnightNights" min="0" value="0">
-    </div>
+        <input type="tel" id="phone" placeholder="Հեռախոսահամար" required>
 
-    <div class="input-group">
-      <label for="saunaDays">Քանի օր է շոքեբաղնիքը:</label>
-      <input type="number" id="saunaDays" min="0" value="0">
-    </div>
+        <input type="number" id="people" placeholder="Մարդկանց քանակ" min="1" required>
 
-    <p>Ընդհանուր գումար: <span id="totalPrice">80,000</span> դրամ</p>
+        <label class="inline-label">
+            Քանի գիշեր է գիշերակացը
+            <input type="number" id="overnightNights" min="0" value="0">
+        </label>
 
-    <button type="submit" class="btn-main">Ամրագրել հիմա</button>
-  </form>
-</section>
+        <label class="inline-label">
+            Քանի օր է շոքեբաղնիքը
+            <input type="number" id="saunaDays" min="0" value="0">
+        </label>
 
-<section id="contact" class="section dark">
-  <h2>Կապ մեզ հետ</h2>
-  <p>📍 Ձորաղբյուր, Ազատության նրբանցք 7</p>
-  <p>📞 <a href="tel:098400070">098400070</a></p>
+        <h2>Ընդհանուր գումար՝ 
+            <span id="totalPrice">0</span> դրամ
+        </h2>
 
-  <div class="map">
-    <iframe 
-      src="https://www.google.com/maps?q=Siroon+Tun,+Dzoraghbyur&output=embed"
-      width="100%" 
-      height="350" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
+        <button type="submit">Ամրագրել</button>
 
-  <div class="map-buttons">
-    <a href="https://www.google.com/maps/search/?api=1&query=Siroon+Tun+Dzoraghbyur" target="_blank" class="btn-main">
-      📍 Directions
-    </a>
+    </form>
+</div>
 
-    <a href="https://search.google.com/local/writereview?placeid=ChIJY6U7OMn6qFARi-bTzZk4W9I" target="_blank" class="btn-main">
-      ⭐ Գնահատել մեզ Google-ում
-    </a>
-  </div>
-</section>
-
-<footer>
-© 2026 Siroon Tun | Բոլոր իրավունքները պաշտպանված են
-</footer>
-
-<!-- JS ֆայլը առանձին -->
 <script src="script.js"></script>
-
 </body>
 </html>
